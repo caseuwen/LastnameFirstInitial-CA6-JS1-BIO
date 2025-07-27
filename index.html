@@ -6,15 +6,23 @@
         <title> Bear Ninja Hunter Game</title> 
     </head>
     <body>
+        <!-- initial webpage text-->
         <h1>bear ninja hunter game</h1>
         <p id = "result">welcome to bear ninja hunter game</p>
     <script>
+        //prompt user for user name
         let playername = prompt("welcome to Bear Hunter Ninja!Please enter your name to get started:");
+        //use alert to prompt the user name
         alert("Hi," + playername + " Let's Play");
+        //ask user for his choice for bear ninja or hunter
         let playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
+        //static variable for computer's choice. set to be bear
         const computerChoice = "bear";
+        //use ${} to create the message
         let message = `${playername}, you picked ${playerChoice}! The computer picked Bear!`;
+        //prompt the message on web page
         document.getElementById("result").innerHTML = message;
+        //prompt the message on console
         console.log(message);
     </script>
     </body>
